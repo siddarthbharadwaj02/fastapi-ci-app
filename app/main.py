@@ -8,4 +8,4 @@ templates = Jinja2Templates(directory="templates")
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request, "message": "Hello from FastAPI + Jenkins to Dell!"})
+    return templates.TemplateResponse("index.html", {"request": request, "message": "What are are you learning today"})
